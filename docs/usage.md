@@ -1,21 +1,8 @@
-# Використання проєкту
+# Інструкція з використання AI-агента та запуску проєкту
 
-## Локальна розробка
+## 1. Запуск AI-агента у VS Code (GitHub Copilot Chat)
 
-У корені репозиторію виконайте:
-
-```sh
-npm install
-npm run build
-npm start
-npm test
-```
-
-Після складання `npm start` виводить `Hello World`. `npm test` запускає тест
-`BasicAddition` через Vitest.
-
-## Локальний CI
-
-На Linux або macOS виконайте `bash ./ci.sh`; на Windows — `.\ci.bat`.
-Скрипти встановлюють залежності, збирають TypeScript, перевіряють наявність
-`dist/hello.js` і запускають тести.
+### Повний автоматичний сценарій (Orchestrator)
+Для виконання всіх етапів з нуля у гілці `feature/...` відкрийте GitHub Copilot Chat (у режимі Agent або Edit) та виконайте запит із прикріпленням файлу оркестратора:
+```text
+Виконай інструкції з файлу #file:.github/prompts/init.prompt.md згідно з правилами #file:.github/agents/build-engineer.agent.md
