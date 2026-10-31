@@ -1,0 +1,15 @@
+{
+  "name": "ai-agent-lab1",
+  "version": "1.0.0",
+  "description": "TypeScript Hello World project with Vitest and cross-platform CI",
+  "main": "dist/hello.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/hello.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}
